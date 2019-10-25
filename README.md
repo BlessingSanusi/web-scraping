@@ -22,3 +22,6 @@ A web app that scrapes New York Times and let users view and leave comments on t
     * Mongoose 
     * Express
     * Express-handlebars
+
+
+    ![scraper](images/web-app.png)
