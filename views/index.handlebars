@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="jumbotron jumbotron-fluid align-items-center shadow-md">
+  <div class="container text-center">
+
+    <h3 class="display-4"><strong>New York Times Scraper</strong> </h3>
+    
+  </div>
+</div>
+
+    <div class="col-md-12">
+        {{#if articles}}
+        {{#each articles}}
+        <div class="card ">
+            <div class="card-header">
+                <h4><a href={{this.link}} target="_blank">{{this.title}}</a></h4>
+            </div>
+            <div class="card-body">
+                <p class="card-text"> {{this.summary}}</p>
+                <button type="button" class="btn btn-success saveArticle" data-id={{this._id}}>Save Article</button>
+                <button type="button" class="btn btn-danger deleteArticle" data-id={{this._id}}>Delete</button>
+                <br>
+                <hr>
+            </div>
+        </div>
+        <br>
+        {{/each}}
+        {{else}}
+        <div class="card">
+            <div class="card-body">
+                <h4 style="font-family: News Cycle;">Uh Oh. Looks like we don't have any new articles.</h4>
+            </div>
+        </div>
+        {{/if}}
+    </div>
+</div>
+</div>
