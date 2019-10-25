@@ -24,4 +24,4 @@ A web app that scrapes New York Times and let users view and leave comments on t
     * Express-handlebars
 
 
-    ![scraper](/assets/images/web-app.png)
+    ![scraper](/assets/images/app.png)
